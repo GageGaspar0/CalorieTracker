@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      prefWidth="400" prefHeight="260"
+      fx:controller="com.calorietracker.ui.controllers.MenuController">
+    <Label text="Calorie Tracker" style="-fx-font-size:22px;"/>
+    <Button text="Add Meal"             onAction="#goAddMeal"/>
+    <Button text="See Meal History"     onAction="#goHistory"/>
+    <Button text="Dashboard"            onAction="#goDashboard"/>
+    <Button text="Set Calorie Goals"    onAction="#goGoal"/>
+</VBox>

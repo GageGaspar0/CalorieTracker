@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane fx:id="dialogPane"  xmlns:fx="http://javafx.com/fxml" prefWidth="250" prefHeight="200"
+            fx:controller="com.calorietracker.ui.controllers.GoalDialogController">
+    <content>
+        <VBox spacing="10" alignment="CENTER">
+            <Label text="Daily Calorie Goal"/>
+
+            <HBox spacing="10" alignment="CENTER">
+                <TextField prefWidth="100" fx:id="goalField"/>
+                <Label text="/Day"/>
+            </HBox>
+
+
+        </VBox>
+    </content>
+    <buttonTypes>
+        <ButtonType text="Save"  buttonData="OK_DONE"/>
+        <ButtonType text="Cancel" buttonData="CANCEL_CLOSE"/>
+    </buttonTypes>
+</DialogPane>

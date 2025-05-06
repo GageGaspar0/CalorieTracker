@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.calorietracker.ui.controllers.DashboardController"
+          hgap="10" vgap="10" prefWidth="850">
+
+
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="0"
+          style="-fx-border-color:#C0C0C0; -fx-border-radius:5; -fx-padding:10;">
+        <Label text="Daily Goal"/>
+        <Label fx:id="goalLbl" style="-fx-font-size:18; -fx-font-weight:bold;"/>
+    </VBox>
+
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="1"
+          style="-fx-border-color:#C0C0C0; -fx-border-radius:5; -fx-padding:10;">
+        <Label text="Avg / day"/>
+        <Label fx:id="avgDayLbl" style="-fx-font-size:18; -fx-font-weight:bold;"/>
+    </VBox>
+
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="2"
+          style="-fx-border-color:#C0C0C0; -fx-border-radius:5; -fx-padding:10;">
+        <Label text="Avg / week"/>
+        <Label fx:id="avgWeekLbl" style="-fx-font-size:18; -fx-font-weight:bold;"/>
+    </VBox>
+
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="3"
+          style="-fx-border-color:#C0C0C0; -fx-border-radius:5; -fx-padding:10;">
+        <Label text="14-day trend"/>
+        <Label fx:id="trendLbl" style="-fx-font-size:18; -fx-font-weight:bold;"/>
+    </VBox>
+
+    <VBox GridPane.rowIndex="1" GridPane.columnIndex="0"
+          style="-fx-border-color:#C0C0C0; -fx-border-radius:5; -fx-padding:10;">
+        <Label text="This month days over goal"/>
+        <Label fx:id="overLimitLbl" style="-fx-font-size:18; -fx-font-weight:bold;"/>
+    </VBox>
+
+    <VBox GridPane.rowIndex="1" GridPane.columnIndex="1"
+          style="-fx-border-color:#C0C0C0; -fx-border-radius:5; -fx-padding:10;">
+        <Label text="Avg over-goal / wk"/>
+        <Label fx:id="overGoalWeeklyLbl" style="-fx-font-size:18; -fx-font-weight:bold;"/>
+    </VBox>
+
+    <VBox GridPane.rowIndex="1" GridPane.columnIndex="2"
+          style="-fx-border-color:#C0C0C0; -fx-border-radius:5; -fx-padding:10;">
+        <Label text="Weekend/Weekday Difference"/>
+        <Label fx:id="weekendLbl" style="-fx-font-size:18; -fx-font-weight:bold;"/>
+    </VBox>
+
+    <VBox GridPane.rowIndex="1" GridPane.columnIndex="3"
+          style="-fx-border-color:#C0C0C0; -fx-border-radius:5; -fx-padding:10;">
+        <Label text="Your favorite food group"/>
+        <Label fx:id="favGroupLbl" style="-fx-font-size:18; -fx-font-weight:bold;"/>
+    </VBox>
+
+
+    <VBox GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="2"
+          style="-fx-border-color:#C0C0C0; -fx-border-radius:5; -fx-padding:10;">
+        <Label text="Top-5 meals ( this month | last month | last 3 months )"/>
+        <ListView fx:id="topMealsList" prefHeight="160" prefWidth="440"/>
+    </VBox>
+
+    <VBox GridPane.rowIndex="2" GridPane.columnIndex="2" GridPane.columnSpan="2"
+          style="-fx-border-color:#C0C0C0; -fx-border-radius:5; -fx-padding:10;">
+        <Label text="Your biggest Calorie source"/>
+        <Label fx:id="calLbl" style="-fx-font-size:18; -fx-font-weight:bold;"/>
+
+        <Label text="Your biggest Fat source" style="-fx-padding:5 0 0 0;"/>
+        <Label fx:id="fatLbl" style="-fx-font-size:18; -fx-font-weight:bold;"/>
+
+        <Label text="Your biggest Protein source" style="-fx-padding:5 0 0 0;"/>
+        <Label fx:id="proLbl" style="-fx-font-size:18; -fx-font-weight:bold;"/>
+
+        <Label text="Your biggest Carb source" style="-fx-padding:5 0 0 0;"/>
+        <Label fx:id="carbLbl" style="-fx-font-size:18; -fx-font-weight:bold;"/>
+
+        <Label text="Your biggest Sugar source" style="-fx-padding:5 0 0 0;"/>
+        <Label fx:id="sugarLbl" style="-fx-font-size:18; -fx-font-weight:bold;"/>
+    </VBox>
+
+    <HBox GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="4"
+          spacing="10" alignment="CENTER">
+        <Button text="Refresh" onAction="#refresh"/>
+        <Button text="Back" onAction="#back"/>
+    </HBox>
+
+</GridPane>

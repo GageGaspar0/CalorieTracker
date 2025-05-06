@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      prefWidth="400" prefHeight="260"
+      fx:controller="com.calorietracker.ui.controllers.AddMealChoiceController">
+    <Label text="Add Meal"/>
+    <Button text="Add Meal From List" onAction="#fromList"/>
+    <Button text="Add Custom Meal" onAction="#custom"/>
+    <Button text="Back" onAction="#back"/>
+</VBox>
